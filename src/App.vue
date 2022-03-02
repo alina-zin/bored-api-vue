@@ -4,9 +4,9 @@
 
 <template>
   <div v-bind="activity">
-      <h1><i>If you are bored...</i></h1>
-      <p>{{ activity.activity }}</p>
-      <button @click="reloadPage">Something else</button>
+    <h1><i>If you are bored...</i></h1>
+    <p>{{ activity.activity }}</p>
+    <button @click="reloadPage">Something else</button>
   </div>
 </template>
 
@@ -55,6 +55,14 @@ export default {
   button {
     font-size: 15px;
     padding: 10px;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    border: 2px solid lightskyblue;
+    transition-duration: 0.4s;
+  }
+
+  button:hover {
     background-color: lightskyblue;
   }
 
